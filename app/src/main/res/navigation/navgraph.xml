@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/studentListFragment">
+
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:name="com.example.maayanalice.StudentListFragment"
+        android:label="Student List"
+        tools:layout="@layout/fragment_student_list" >
+        <action
+            android:id="@+id/action_studentListFragment_to_studentDetailsFragment"
+            app:destination="@id/studentDetailsFragment" />
+        <action
+            android:id="@+id/action_studentListFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailsFragment"
+        android:name="com.example.maayanalice.StudentDetailsFragment"
+        android:label="Student Details"
+        tools:layout="@layout/fragment_student_details" >
+        <argument
+            android:name="studentId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_studentDetailsFragment_to_studentEditFragment"
+            app:destination="@id/studentEditFragment" />
+        <action
+            android:id="@+id/action_studentDetailsFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.example.maayanalice.AddStudentFragment"
+        android:label="Add New Student"
+        tools:layout="@layout/fragment_add_student" >
+        <action
+            android:id="@+id/action_addStudentFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentEditFragment"
+        android:name="com.example.maayanalice.StudentEditFragment"
+        android:label="Student Edit"
+        tools:layout="@layout/fragment_student_edit" >
+        <argument
+            android:name="studentId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_studentEditFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+    </fragment>
+</navigation>
