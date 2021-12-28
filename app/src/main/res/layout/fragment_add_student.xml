@@ -12,129 +12,133 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10sp"
-        >
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="111dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40sp"
             android:layout_marginTop="20sp"
-            >
+            android:layout_marginBottom="40sp">
+
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/avatar"
-                />
+                android:src="@drawable/avatar" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/name"
                 android:layout_marginRight="10sp"
-                />
+                android:text="@string/name" />
+
             <EditText
                 android:id="@+id/addStudent_name_field"
-                android:minWidth="30sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                />
-        </LinearLayout><LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/id"
-            android:layout_marginRight="10sp"
-            />
-        <EditText
-            android:id="@+id/addStudent_id_field"
-            android:minWidth="30sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            />
-    </LinearLayout>
+                android:minWidth="30sp" />
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/address"
                 android:layout_marginRight="10sp"
-                />
+                android:text="@string/id" />
+
+            <EditText
+                android:id="@+id/addStudent_id_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:minWidth="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:text="@string/address" />
+
             <EditText
                 android:id="@+id/addstudent_address_field"
-                android:minWidth="30sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                />
+                android:minWidth="30sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/phone"
                 android:layout_marginRight="10sp"
-                />
+                android:text="@string/phone" />
+
             <EditText
                 android:id="@+id/addstudent_phone_field"
-                android:minWidth="30sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                />
+                android:minWidth="30sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/checked"
                 android:layout_marginRight="10sp"
-                />
+                android:text="@string/checked" />
+
             <CheckBox
                 android:id="@+id/addstudent_checkBox"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
 
             <RelativeLayout
                 android:id="@+id/newStudent_buttons"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_alignParentBottom="true"
-                >
+                android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/addStudent_cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cancel"
                     android:layout_alignParentEnd="true"
-                    />
+                    android:text="@string/cancel" />
+
                 <Button
                     android:id="@+id/addStudent_save"
                     android:layout_width="wrap_content"
