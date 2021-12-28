@@ -24,6 +24,7 @@ public class AddStudentFragment extends Fragment {
     EditText phone;
     EditText address;
     CheckBox cb;
+
     Button save_btn;
     Button cancel_btn;
     View view;
