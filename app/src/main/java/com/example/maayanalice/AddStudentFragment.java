@@ -27,7 +27,6 @@ public class AddStudentFragment extends Fragment {
     Button save_btn;
     Button cancel_btn;
     View view;
-
     ProgressBar progressBar;
 
     @Override
