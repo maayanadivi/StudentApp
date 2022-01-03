@@ -14,6 +14,8 @@ public class MyApplication extends Application {
 
     public static ExecutorService executorService = Executors.newFixedThreadPool(4);
     final public static Handler mainHandler = HandlerCompat.createAsync(Looper.getMainLooper());
+    //handler
+
     private static Context context;
     public void onCreate() {
         super.onCreate();
