@@ -6,5 +6,6 @@
         android:id="@+id/menu_add"
         android:icon="@android:drawable/ic_input_add"
         android:title="Add"
+
         app:showAsAction="always" />
 </menu>
